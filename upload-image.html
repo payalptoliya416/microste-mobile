@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile </title>
+    <!-- --bootstrap -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+     <!-- --fonts-- -->
+     <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <!-- --style-- -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="main upload-main">
+        <section class="upload-image-sec">
+            <div class="container">
+            <form class="upload-img-info" onsubmit="return false;">
+                <div class="mb-3">
+                    <label for="nickname" class="form-label"><img src="assets/image/nickname.png" alt=""></label>
+                    <input type="text" id="nickname" name="nickname" class="form-control">
+                </div>
+               <div class="upload-btns">
+                <input type="file" id="fileUpload" style="display: none;" />
+                 <button type="button" onclick="triggerFileUpload()" class="upload-button">
+                    <img src="assets/image/upload.png" class="btn-img" alt="Choose Image" title="Click to select an image" />
+                    </button>
+                <a href="result.html"><img src="assets/image/next.png" alt="Next" class="btn-img"/></a>
+                </div>
+            </form>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+         function triggerFileUpload() {
+    document.getElementById('fileUpload').click();
+  }
+    </script>
+</body>
+</html>
